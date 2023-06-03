@@ -9,6 +9,8 @@ import ColorList from "./ColorList";
 import Slots from "./Slots";
 import ShoppingList from "./ShoppingList";
 import PropertyList from "./PropertyList";
+import Clicker from "./Clicker";
+import Form from "./Form";
 
 const properties = [
   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -29,8 +31,13 @@ const properties = [
 function App() {
   return (
     <div>
-      <PropertyList properties={properties} />
+      {/* <Form /> */}
+      <Clicker message="Hi!!!" buttonText=" please click me!" />
+      <Clicker message="Please stop clicking me!" buttonText="do not click" />
     </div>
+    // <div>
+    //   <PropertyList properties={properties} />
+    // </div>
     // <ShoppingList items={data} />
     // <div>
     //   <Slots val1="🎈" val2="🎈" val3="🎈" />
