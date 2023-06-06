@@ -13,6 +13,7 @@ import Clicker from "./Clicker";
 import Form from "./Form";
 import Counter from "./Counter";
 import Toggler from "./Toggler";
+import TogglerCounter from "./ToggleCounter";
 
 const properties = [
   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -33,7 +34,8 @@ const properties = [
 function App() {
   return (
     <div>
-      <Toggler />
+      <TogglerCounter/>
+      {/* <Toggler /> */}
       {/* <Counter /> */}
       {/* <Form />
       <Clicker message="Hi!!!" buttonText=" please click me!" />
