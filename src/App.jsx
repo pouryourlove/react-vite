@@ -15,6 +15,7 @@ import Counter from "./Counter";
 import Toggler from "./Toggler";
 import ToggleCounter from "./ToggleCounter";
 import ColorBox from "./ColorBox";
+import ColorBoxGrid from "./ColorBoxGrid";
 
 const properties = [
   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -54,8 +55,8 @@ const colors = [
 function App() {
   return (
     <div>
-      
-      <ColorBox colors = {colors}/>
+      <ColorBoxGrid colors={colors}/>
+      {/* <ColorBox colors = {colors}/> */}
       {/* <Counter/> */}
       {/* <ToggleCounter/> */}
       {/* <Toggler /> */}
