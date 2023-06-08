@@ -34,7 +34,8 @@ const properties = [
 function App() {
   return (
     <div>
-      <ToggleCounter/>
+      <Counter/>
+      {/* <ToggleCounter/> */}
       {/* <Toggler /> */}
       {/* <Counter /> */}
       {/* <Form />
