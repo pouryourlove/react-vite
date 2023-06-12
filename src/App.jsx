@@ -1,5 +1,7 @@
 import "./App.css";
 import Dumbo from "./Dumbo";
+import ScoreKeeper from "./ScoreKeeper";
+import EmojiClicker from "./EmojiClicker";
 
 // import Chicken from "./Chicken";
 // import Greeter from "./Greeter";
@@ -56,9 +58,11 @@ import Counter from "./Counter";
 function App() {
   return (
     <div>
+      <EmojiClicker />
+      {/* <ScoreKeeper /> */}
       {/* <Dumbo /> */}
       {/* <Toggler /> */}
-      <Counter />
+      {/* <Counter /> */}
       {/* <Form />
       <Clicker message="Hi!!!" buttonText=" please click me!" />
       <Clicker message="Please stop clicking me!" buttonText="do not click" /> */}
