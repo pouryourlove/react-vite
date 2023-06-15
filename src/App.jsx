@@ -2,6 +2,7 @@ import "./App.css";
 import Dumbo from "./Dumbo";
 import ScoreKeeper from "./ScoreKeeper";
 import EmojiClicker from "./EmojiClicker";
+import ScoreExercise from "./ScoreExercise";
 
 // import Chicken from "./Chicken";
 // import Greeter from "./Greeter";
@@ -58,7 +59,8 @@ import Counter from "./Counter";
 function App() {
   return (
     <div>
-      <EmojiClicker />
+      <ScoreExercise numPlayer={4} />
+      {/* <EmojiClicker /> */}
       {/* <ScoreKeeper /> */}
       {/* <Dumbo /> */}
       {/* <Toggler /> */}

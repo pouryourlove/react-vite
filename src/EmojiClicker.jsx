@@ -22,6 +22,14 @@ export default function EmojiClicker() {
       return prevEmojis.filter((e) => e.id !== id);
     });
   };
+
+  const makeEverythingADevil = () => {
+    setEmojis((prevEmojis) => {
+      return prevEmojis.map((e) => {
+        return { ...e, emoji: "😈" };
+      });
+    });
+  };
   return (
     <div>
       {emojis.map((e) => (
@@ -34,6 +42,7 @@ export default function EmojiClicker() {
         </span>
       ))}
       <button onClick={addEmoji}>Add Emoji </button>
+      <button onClick={makeEverythingADevil}>Make them all devil</button>
     </div>
   );
 }
