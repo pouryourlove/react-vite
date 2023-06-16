@@ -59,7 +59,7 @@ import Counter from "./Counter";
 function App() {
   return (
     <div>
-      <ScoreExercise numPlayer={4} />
+      <ScoreExercise numPlayers={10} target={3} />
       {/* <EmojiClicker /> */}
       {/* <ScoreKeeper /> */}
       {/* <Dumbo /> */}

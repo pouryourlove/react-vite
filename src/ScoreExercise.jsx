@@ -1,16 +1,41 @@
 import { useState } from "react";
 
-export default function ScoreExercise() {
-  const [num, setNum] = useState(0);
-  function increment() {
-    setNum((oldScores) => oldScores + 1);
-  }
+export default function ScoreExercise({ numPlayers = 3, target = 5 }) {
+  const [scores, setScores] = useState(new Array(numPlayers).fill(0));
+  // const incrementScore = (idx) => {
+  //   setScores((prevScores) => {
+  //     const copy = [...prevScores];
+  //     copy[idx] += 1;
+  //     return copy;
+  //   });
+  // };
+  const incrementScore = (idx) => {
+    setScores((prevScores) => {
+      return prevScores.map((score, i) => {
+        if (i === idx) return score + 1;
+        return score;
+      });
+    });
+  };
+
+  const reset = () => {
+    setScores(new Array(numPlayers).fill(0));
+  };
   return (
-    <div style={{ display: "flex" }}>
+    <div>
+      <h1>Score Keeper</h1>
       <ul>
-        <li>Player 1 : {num}</li>
+        {scores.map((score, idx) => {
+          return (
+            <li key={idx}>
+              Player{idx + 1} : {score}
+              <button onClick={() => incrementScore(idx)}>+1</button>
+              {score >= target && "WINNER!"}
+            </li>
+          );
+        })}
       </ul>
-      <button onClick={increment}>+1</button>
+      <button onClick={reset}>Reset </button>
     </div>
   );
 }
