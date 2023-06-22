@@ -1,8 +1,10 @@
 import "./App.css";
-import Dumbo from "./Dumbo";
-import ScoreKeeper from "./ScoreKeeper";
-import EmojiClicker from "./EmojiClicker";
-import ScoreExercise from "./ScoreExercise";
+import DieExercise from "./DieExercise";
+
+// import Dumbo from "./Dumbo";
+// import ScoreKeeper from "./ScoreKeeper";
+// import EmojiClicker from "./EmojiClicker";
+// import ScoreExercise from "./ScoreExercise";
 
 // import Chicken from "./Chicken";
 // import Greeter from "./Greeter";
@@ -16,11 +18,11 @@ import ScoreExercise from "./ScoreExercise";
 // import PropertyList from "./PropertyList";
 // import Clicker from "./Clicker";
 // import Form from "./Form";
-import Counter from "./Counter";
-import Toggler from "./Toggler";
-import ToggleCounter from "./ToggleCounter";
-import ColorBox from "./ColorBox";
-import ColorBoxGrid from "./ColorBoxGrid";
+// import Counter from "./Counter";
+// import Toggler from "./Toggler";
+// import ToggleCounter from "./ToggleCounter";
+// import ColorBox from "./ColorBox";
+// import ColorBoxGrid from "./ColorBoxGrid";
 
 // const properties = [
 //   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -59,7 +61,8 @@ import ColorBoxGrid from "./ColorBoxGrid";
 function App() {
   return (
     <div>
-      <ColorBoxGrid colors={colors}/>
+      <DieExercise />
+      {/* <ColorBoxGrid colors={colors}/> */}
       {/* <ColorBox colors = {colors}/> */}
       {/* <Counter/> */}
       {/* <ToggleCounter/> */}
